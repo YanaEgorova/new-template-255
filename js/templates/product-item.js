@@ -2,6 +2,7 @@ export const item = product => {
   return `
     <li class="product__item item">
       <div class="product__block js_product glass glass-m" id="${product.id}">
+      <div class="product__block--inner">
       <div class="product__img-box">
       <img src="${product.image}" alt="" class="product__block-img">
       </div>
@@ -16,6 +17,9 @@ export const item = product => {
             '</p>'
           : ''
       }
+    
+      </div>
+      </div>
       <span class="product__price">$${product.price.toFixed(2)}</span>
       <div class="product__btn-block">
       <a href="product-page.html?id=${
@@ -30,7 +34,7 @@ export const item = product => {
       }
      </div>
      
-   </div>
+ 
 
 
 
